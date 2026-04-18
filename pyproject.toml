@@ -218,10 +218,10 @@ development = [
     "pyfakefs",
     "pyinstrument>=4.0.2,<5",
     "pylint",
-    "pytest<8.0.0", # hairy issue with pytest >=8 where current_app proxies are not set in time
-    "pytest-asyncio",
+    "pytest>=9.0.3,<10", # CVE-2025-71176 / GHSA-6w46-j5rx-g56g (fixed in 9.0.3)
+    "pytest-asyncio>=1.0.0",
     "pytest-cov",
-    "pytest-mock",
+    "pytest-mock>=3.14.1",
     "python-ldap>=3.4.4",
     "ruff",
     "sqloxide",
